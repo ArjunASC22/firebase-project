@@ -1,0 +1,158 @@
+/* 
+    @NOTE color palette generated with https://coolors.co
+    also using CSS variables to make things easier to change
+    in the future. learn more about CSS vars here:
+    https://www.w3schools.com/css/css3_variables.asp
+
+    primary: #16262E
+    secondary: #2E4756
+    accent: #3C7A89
+*/
+:root {
+    --primary: #1C2C35;
+    --secondary: #2C5763;
+    --accent: #63A9BB;
+}
+
+body {
+    /* size and colors */
+    height: 100vh;
+    background-color: var(--primary);
+    color: #fff;
+
+    /* flexbox styling */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* text */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#all-posts {
+    display: inline;
+}
+
+#chatbox-container {
+    /*
+        @NOTE using responsive units (vw and vh) here.
+        learn more here: https://www.w3schools.com/cssref/css_units.asp
+    */
+    /* size and colors */
+    width: 70vw;
+    height: 90vh;
+    background-color: var(--secondary);
+
+    /* CSS box model */
+    margin: 0 auto;
+    padding: 1%;
+    border-radius: 10px;
+
+    /* flexbox */
+    display: block;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#input-container {
+    display: flex;
+}
+
+input {
+    /* size and colors */
+    width: 90%;
+    height: 10%;
+    background-color: var(--secondary);
+
+    /* CSS box model */
+    border-radius: 10px;
+    margin: 1%;
+    padding: 1%;
+
+    /* flexbox */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+form {
+    /* size and colors */
+    width: 80%;
+    height: 80%;
+
+    /* flexbox */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form input {
+    width: 80%;
+    height: 80%;
+
+    font-size: 1.2em;
+    border-radius: 2px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    width: 1rem;
+}
+
+#postbutton {
+    margin-left: 110px;
+    width: 100px;
+    height: 50px;
+    background-color: var(--accent);
+}
+
+#clearbutton {
+    width: 200px; 
+    height: 50px;
+    background-color: var(--accent);
+}
+
+#clearbutton:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.single-message {
+    display: flex;    
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.single-message p {
+    margin: 2%;
+    font-weight: 600px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+    font-size: 14px;
+}
+
+#newbutton {
+    background-color: var(--accent);
+}
+
+#newbutton:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+#username {
+    width: 400px;
+}
+
+#post-box {
+    width: 1600px;
+}
